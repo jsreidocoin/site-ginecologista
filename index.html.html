@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importância de Ir ao Ginecologista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ffebee 0%, #f8bbd9 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Crédito no canto superior direito */
+        .credit {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            color: #880e4f;
+            font-size: 1rem;
+            z-index: 100;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 8px 15px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Estilo para as flores caindo */
+        .flower {
+            position: fixed;
+            top: -50px;
+            font-size: 24px;
+            z-index: 0;
+            opacity: 0.7;
+            animation: fall linear forwards;
+        }
+        
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+        }
+        
+        h1 {
+            color: #880e4f;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+        
+        .subtitle {
+            color: #ad1457;
+            font-size: 1.2rem;
+        }
+        
+        .doctor-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .doctor-image {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .paragraphs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        
+        .paragraph {
+            flex: 1;
+            min-width: 250px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .paragraph:hover {
+            transform: translateY(-5px);
+        }
+        
+        .paragraph h3 {
+            color: #c2185b;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #f8bbd9;
+            padding-bottom: 8px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .appointment-btn {
+            background: linear-gradient(to right, #e91e63, #ad1457);
+            color: white;
+            border: none;
+            padding: 16px 35px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .appointment-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #880e4f;
+        }
+        
+        @media (max-width: 768px) {
+            .paragraphs {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .credit {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Crédito no canto superior direito -->
+    <div class="credit">Feito por João Otávio</div>
+    
+    <!-- Flores caindo serão adicionadas via JavaScript -->
+    
+    <div class="container">
+        <header>
+            <h1>Importância de Ir ao Ginecologista</h1>
+            <p class="subtitle">Cuidar da sua saúde íntima é essencial para o seu bem-estar</p>
+        </header>
+        
+        <div class="doctor-section">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Doutora" class="doctor-image">
+        </div>
+        
+        <div class="paragraphs">
+            <div class="paragraph">
+                <h3>Prevenção de Doenças</h3>
+                <p>Consultas regulares ao ginecologista permitem a detecção precoce de problemas de saúde, como infecções, cistos e até mesmo o câncer de colo do útero. Exames como o Papanicolau são fundamentais para identificar alterações celulares antes que se tornem problemas mais sérios.</p>
+            </div>
+            
+            <div class="paragraph">
+                <h3>Orientação Especializada</h3>
+                <p>O ginecologista oferece orientação personalizada sobre métodos contraceptivos, planejamento familiar, saúde sexual e menopausa. Essas consultas são oportunidades para esclarecer dúvidas e receber informações baseadas em evidências científicas sobre sua saúde reprodutiva.</p>
+            </div>
+            
+            <div class="paragraph">
+                <h3>Saúde Integral</h3>
+                <p>A saúde ginecológica está diretamente relacionada ao bem-estar geral. Problemas hormonais, por exemplo, podem afetar o humor, a energia e até a saúde óssea. O acompanhamento regular ajuda a manter o equilíbrio do organismo como um todo.</p>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <button class="appointment-btn">Marque sua Consulta</button>
+        </div>
+        
+        <footer>
+            <p>Cuide da sua saúde. Sua vida agradece.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Criar flores caindo
+        function createFlower() {
+            const flower = document.createElement('div');
+            flower.classList.add('flower');
+            
+            // Usar emojis de flores
+            const flowers = ['🌸', '🌺', '🌷', '💮', '🏵️', '🌼', '🌻'];
+            flower.innerHTML = flowers[Math.floor(Math.random() * flowers.length)];
+            
+            // Posição aleatória
+            flower.style.left = Math.random() * 100 + 'vw';
+            
+            // Duração aleatória da animação
+            flower.style.animationDuration = Math.random() * 10 + 5 + 's';
+            
+            // Tamanho aleatório
+            const size = Math.random() * 20 + 15;
+            flower.style.fontSize = size + 'px';
+            
+            document.body.appendChild(flower);
+            
+            // Remover a flor depois que a animação terminar
+            setTimeout(() => {
+                flower.remove();
+            }, 15000);
+        }
+        
+        // Criar flores em intervalos regulares
+        setInterval(createFlower, 500);
+        
+        // Criar algumas flores imediatamente
+        for (let i = 0; i < 10; i++) {
+            setTimeout(createFlower, i * 300);
+        }
+        
+        // Botão de consulta
+        document.querySelector('.appointment-btn').addEventListener('click', function() {
+            alert('Para marcar sua consulta, entre em contato conosco pelo telefone (XX) XXXX-XXXX ou através do nosso site.');
+        });
+    </script>
+</body>
+</html>
